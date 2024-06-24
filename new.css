@@ -61,12 +61,12 @@ body {
 .hero { 
 	background-image: url('./Images/heroImg3.avif'); 
 	background-repeat: no-repeat; 
-	background-size: 100% 100%; 
+	background-size: 100% 80%; 
 	width: 100%; 
 	height: 100vh; 
 	display: flex; 
 	align-items: center; 
-	justify-content: start; 
+	justify-content: space-around; 
 	margin: 4.8rem 0; 
 } 
 
@@ -76,25 +76,38 @@ body {
 } 
 
 .hero .intro-buttons { 
-	margin: 2rem 0; 
-	display: flex; 
+	margin: 2rem 2rem; 
+	/* display: flex;  */
 	align-items: center; 
-	justify-content: space-evenly; 
-} 
+	justify-content: space-between; 
+}
+
+.Hero-image{
+	height: 70vh;
+	/* width: 40vw; */
+}
+
+/* Featured Portfolio section */
+.Featured-text{
+	padding: 0 0 0 40px;
+}
 
 /* About section styles */
 .about { 
 	display: flex; 
 	align-items: center; 
 	background-image: linear-gradient(45deg, #363D73, #2794B3); 
-	justify-content: space-between; 
+	justify-content: space-around; 
 	width: 100%; 
 } 
-
+.space{
+	padding: 20px;
+}
 .about .about-text { 
 	width: 450px; 
 	color: #fff; 
 	padding: 5rem 1rem 5rem 5rem; 
+	text-align: justify;
 } 
 
 .about .about-image img { 
@@ -130,16 +143,21 @@ body {
 .services { 
 	display: flex; 
 	align-items: center; 
-	justify-content: center; 
+	justify-content: space-around; 
 	flex-direction: column; 
 	margin: 4.8rem 0; 
 	padding: 0 5rem; 
 } 
 
+.services-heading{
+	margin-bottom: 2rem;
+}
+
 .my-row { 
+	height: 60vh;
 	display: flex; 
 	align-items: center; 
-	justify-content: space-between; 
+	justify-content: space-evenly; 
 	margin: 2rem 0; 
 } 
 
@@ -156,7 +174,7 @@ body {
 	justify-content: center; 
 	border-radius: 20px; 
 	background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
-	padding: 1rem; 
+	padding: 1.5rem; 
 } 
 
 .icon { 
@@ -181,12 +199,14 @@ body {
 
 .contact-content { 
 	display: flex; 
-	margin: 3rem 0; 
-	justify-content: space-between; 
+	margin: 4rem 15rem; 
+	align-content: center;
+	justify-content: space-evenly;
+
 } 
 
 .contact-form-container { 
-	width: 50%; 
+	width: 30vw; 
 } 
 
 .contact-form { 
@@ -197,7 +217,7 @@ body {
 .contact-form .form-controls { 
 	width: 80%; 
 	padding: 10px 0; 
-	margin: 1.67rem 0; 
+	margin: 1rem 0; 
 } 
 
 .contact-form .form-btn { 
@@ -254,14 +274,14 @@ body {
 
 /* utility classes */
 .greet-heading { 
-	font-size: 1.3rem; 
+	font-size: 1.8rem; 
 	font-weight: lighter; 
 	margin: 0; 
 	letter-spacing: 1px; 
 } 
 
 .my-heading { 
-	font-size: 2.5rem; 
+	font-size: 3rem; 
 	margin: 0; 
 } 
 
@@ -331,6 +351,7 @@ body {
 .small-para { 
 	font-size: 14px; 
 	color: #fff; 
+	text-align: justify;
 } 
 
 .white-text { 
